@@ -1,0 +1,134 @@
+body{
+    background-image: linear-gradient(135deg
+    ,#989898, #767676,
+    #4b4b4b, #313131, #000000 );
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.sech{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 300px;
+    
+}
+
+::placeholder{
+    color: black;
+    font-weight: bold;
+    font-weight: 900;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+.lis{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 0 56px 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.icon-container-check{
+    display: flex;
+    justify-content: right;
+    font-weight: 900;
+}
+
+.icon-container-delete{
+    display: flex;
+    justify-content: left;
+    font-weight: 900;
+}
+
+.prop{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+}
+
+.mBoton{
+    box-shadow: 0px 5px 25px rgb(0, 0, 0);  
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    position: relative;
+}
+
+.mBoton:hover{
+    transform: rotate(180deg);
+}
+
+.dBoton{
+    display: flex;
+    justify-content: right;
+}
+
+.--complete{
+    text-decoration: line-through;
+}
+
+.icon-container-check--active{
+    color: #4caf50;
+}
+
+.icon-container-check:hover{
+    color: #4caf50;
+}
+
+.icon-container-delete:hover{
+    color: red;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+}
+
+.Icon-svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.icon-container-check:hover .Icon-svg{
+    fill: green;
+}
+
+.icon-container-delete:hover .Icon-svg{
+    fill: red;
+}
