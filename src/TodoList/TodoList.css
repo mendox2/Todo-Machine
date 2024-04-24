@@ -1,0 +1,33 @@
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+.lis{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 0 56px 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.icon-container-check{
+    display: flex;
+    justify-content: right;
+    font-weight: 900;
+}
+
+.icon-container-delete{
+    display: flex;
+    justify-content: left;
+    font-weight: 900;
+}
+
+.prop{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+}

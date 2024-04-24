@@ -1,0 +1,29 @@
+.icon-container-check--active{
+    color: #4caf50;
+}
+
+.icon-container-check:hover{
+    color: #4caf50;
+}
+
+.icon-container-delete:hover{
+    color: red;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+}
+
+.Icon-svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.icon-container-check:hover .Icon-svg{
+    fill: green;
+}
+
+.icon-container-delete:hover .Icon-svg{
+    fill: red;
+}

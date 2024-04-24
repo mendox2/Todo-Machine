@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(135deg
+    ,#989898, #767676,
+    #4b4b4b, #313131, #000000 );
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+::placeholder{
+    color: black;
+    font-weight: bold;
+    font-weight: 900;
+    text-align: center;
+}

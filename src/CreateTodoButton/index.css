@@ -1,0 +1,25 @@
+.mBoton{
+    box-shadow: 0px 5px 25px rgb(0, 0, 0);  
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    position: relative;
+}
+
+.mBoton:hover{
+    transform: rotate(180deg);
+}
+
+.dBoton{
+    display: flex;
+    justify-content: right;
+}
+
