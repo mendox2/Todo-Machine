@@ -5,6 +5,8 @@ import { TodoItem } from '../Todoitem/Todoitem';
 import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton'
 
 function Appx({
+    loading,
+    error,
     completedTodos,
     totalTodos,
     searchValue,
@@ -23,6 +25,10 @@ function Appx({
     
           
           <TodoList>
+            {loading && <p>Estamos cargando...</p>}
+            {error && <p>Desesperate, hubo un error!!</p>}
+            {(!loading && searchedTodos.length ==0) && <p>Crea tu primer TODO!</p>}
+            
            {searchedTodos.map(todo =>(
              <TodoItem 
              key={todo.txt}

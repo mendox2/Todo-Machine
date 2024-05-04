@@ -4,7 +4,11 @@ import { useLocalStorage } from './useLocalStorage';
 import '../Body.css';
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {item: todos,
+    saveItem: saveTodos,
+      loading,
+      error,
+  } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setsearchValue] = React.useState('');
 
   const completedTodos = todos.filter(
@@ -12,7 +16,7 @@ function App() {
   ).length;
   const totalTodos = todos.length;
   
-  console.log("Los usuarios buscan TODOs de: "+searchValue)
+  // console.log("Los usuarios buscan TODOs de: "+searchValue)
 
   const searchedTodos = todos.filter(
     (todo) => {
@@ -41,13 +45,15 @@ function App() {
     }
     return(
       <Appx
+      loading={loading}
+      erorr={error}
       completedTodos={completedTodos}
-    totalTodos={totalTodos}
-    searchValue={searchValue}
-    setsearchValue={setsearchValue}
-    searchedTodos={searchedTodos}
-    completeTodo={completeTodo}
-    deleteTodo={deleteTodo}
+      totalTodos={totalTodos}
+      searchValue={searchValue}
+      setsearchValue={setsearchValue}
+      searchedTodos={searchedTodos}
+      completeTodo={completeTodo}
+      deleteTodo={deleteTodo}
       />
     );
 }
