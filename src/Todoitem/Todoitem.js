@@ -1,6 +1,5 @@
 import {CompleteIcon} from '../iconos/CompleteIcon';
 import {DeleteIcon} from '../iconos/DeleteIcon';
-import { RiDeleteBin7Line } from "react-icons/ri";
 import './TodoItem.css';
 
 function TodoItem(props) {
