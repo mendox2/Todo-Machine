@@ -1,18 +1,16 @@
 import './index.css';
 
-function CreateTodoButton(){
+function CreateTodoButton( { setOpenModal } ){
     return(
         <div className="dBoton">
         <button
             className="mBoton"
             onClick={
-              (event) => {
-                console.log("le dite click")
-                console.log(event)
-                console.log(event.target)
-            } 
-        }
-        >†</button>
+                () => {
+                    setOpenModal(state => !state);
+                }
+            }
+        >⋈</button>
         </div>
     );
 }

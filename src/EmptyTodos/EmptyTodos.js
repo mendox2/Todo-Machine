@@ -1,8 +1,11 @@
 import React from 'react';
+import './Empty.css';
 
 function EmptyTodos() {
     return(
-        <p>Crea tu primer TODO!</p>
+        <div className='dTodo'>
+            <h2 className='hTodo'>Crea un TODO</h2>
+        </div>
     );
 }
 

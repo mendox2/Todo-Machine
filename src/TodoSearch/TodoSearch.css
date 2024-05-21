@@ -6,9 +6,8 @@
 }
 
 .input{
-    border: none;
     border-radius: 15px;
     height: 40px;
     width: 300px;
-    
+    border: 5px solid rgba(47, 7, 80);
 }
