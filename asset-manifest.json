@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Todo-Machine/static/css/main.b2babdde.css",
+    "main.js": "/Todo-Machine/static/js/main.a7f73665.js",
+    "static/media/fondo.jpg": "/Todo-Machine/static/media/fondo.df05ef49c7389425dc6e.jpg",
+    "index.html": "/Todo-Machine/index.html",
+    "main.b2babdde.css.map": "/Todo-Machine/static/css/main.b2babdde.css.map",
+    "main.a7f73665.js.map": "/Todo-Machine/static/js/main.a7f73665.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2babdde.css",
+    "static/js/main.a7f73665.js"
+  ]
+}
